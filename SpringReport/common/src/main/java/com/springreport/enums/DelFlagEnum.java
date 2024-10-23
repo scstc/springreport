@@ -12,19 +12,23 @@ import com.springreport.base.BaseIntEnum;
 public enum DelFlagEnum implements BaseIntEnum{
 
 	UNDEL {
+		@Override
 		public Integer getCode() {
 			return 1;
 		}
 
+		@Override
 		public String getName() {
 			return "未删除";
 		}
 	},
 	DEL {
+		@Override
 		public Integer getCode() {
 			return 2;
 		}
 
+		@Override
 		public String getName() {
 			return "已删除";
 		}

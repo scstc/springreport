@@ -394,7 +394,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
 		BaseEntity result = new BaseEntity();
 		SysUser update = new SysUser();
 		update.setId(sysUser.getId());
-		update.setPassword(Md5Util.generateMd5(Md5Util.generateMd5(Constants.DEFALUT_PASSWORD)));
+		update.setPassword(Md5Util.generateMd5(Md5Util.generateMd5(Constants.DEFAULT_PASSWORD)));
 		this.updateById(update);
 		result.setStatusMsg(MessageUtil.getValue("info.operate.success"));
 		return result;

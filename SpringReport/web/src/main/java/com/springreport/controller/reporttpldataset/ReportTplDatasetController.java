@@ -147,8 +147,8 @@ public class ReportTplDatasetController extends BaseController {
 	@MethodLog(module="ReportTplDataset",remark="添加模板数据集",operateType=Constants.OPERATE_TYPE_ADD)
 	@Check({"datasetName:required#数据集名称","tplId:required#模板id","datasourceId:required#数据源id"})
 	@RequiresPermissions(value = {"reportDesign_addDataSet","reportDesign_editDataSet","reportForms_addDataSet","reportForms_editDataSet","slidTpl_design","docTpl_design"},logical = Logical.OR)
-	public Response addTplDataSets(@RequestBody ReportTplDataset reportTplDataset) throws Exception {
-		ReportDatasetDto result = this.iReportTplDatasetService.addTplDataSets(reportTplDataset);
+	public Response addTplDataSets(@RequestBody ReportTplDataset reportTplDataset,@RequestParam boolean syncCommonFlag) throws Exception {
+		ReportDatasetDto result = this.iReportTplDatasetService.addTplDataSets(reportTplDataset,syncCommonFlag);
 		return Response.success(result);
 	}
 	

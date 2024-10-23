@@ -25,7 +25,8 @@ public class Constants {
 	 * 操作类型，用于操作日志时存储
 	 */
 	public static final String OPERATE_TYPE_ADD = "Add";
-	public static final String OPERATE_TYPE_UPDATE = "Update";
+    public static final String OPERATE_TYPE_SAVE = "Save";
+    public static final String OPERATE_TYPE_UPDATE = "Update";
 	public static final String OPERATE_TYPE_DELETE = "Delete";
 	public static final String OPERATE_TYPE_BATCHDELETE = "BatchDelete";
 	public static final String OPERATE_TYPE_SEARCH = "Search";
@@ -36,9 +37,9 @@ public class Constants {
 	public static final String OPERATE_TYPE_SOCKET = "Socket";
 	
 	/**
-	 * 	默认密码
+	 * 	默认密码 default
 	 */
-	public static final String DEFALUT_PASSWORD = "123456";
+	public static final String DEFAULT_PASSWORD = "123456";
 	
 	/**
 	 * 	管理员角色名称

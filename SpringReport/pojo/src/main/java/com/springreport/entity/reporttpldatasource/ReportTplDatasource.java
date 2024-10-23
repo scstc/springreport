@@ -18,7 +18,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
  /**  
-* @Description: report_tpl_datasource - 
+* @Description: report_tpl_datasource - 报表数据源（即将废弃）
 * @author 
 * @date 2021-05-25 07:55:12
 * @version V1.0  
