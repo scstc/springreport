@@ -111,7 +111,7 @@ export default defineConfig({
     },
     proxy: {
       '/api': {
-        target: 'http://localhost:9099/springReport',
+        target: 'http://5rwcg9.natappfree.cc/springReport',
         changeOrigin: true,
         ws: true,
         pathRewrite: {

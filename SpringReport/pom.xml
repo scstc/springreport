@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.springreport</groupId>
-	<artifactId>parent</artifactId>
+	<artifactId>spring-report</artifactId>
 	<version>2.1.0</version>
 	<packaging>pom</packaging>
 	<modules>
@@ -403,4 +403,47 @@
 			</activation>
 		</profile>
 	</profiles>
+
+	<repositories>
+		<!-- 阿里云maven私仓 -->
+		<repository>
+			<id>2029763-release-vQIhVF</id>
+			<url>https://packages.aliyun.com/maven/repository/2029763-release-vQIhVF</url>
+		</repository>
+		<!-- 阿里云maven仓库 -->
+		<repository>
+			<id>central</id>
+			<name>aliyun maven</name>
+			<url>https://maven.aliyun.com/repository/public</url>
+			<layout>default</layout>
+			<!-- 是否开启发布版构件下载 -->
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<!-- 是否开启快照版构件下载 -->
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<!-- maven中央仓库 -->
+		<repository>
+			<id>central-repos</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+		<!-- spring仓库 -->
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>AsposeJavaAPI</id>
+			<name>Aspose Java API</name>
+			<url>https://releases.aspose.com/java/repo/</url>
+		</repository>
+	</repositories>
 </project>
