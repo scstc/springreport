@@ -1,6 +1,5 @@
 package com.springreport.dto.enhancements;
 
-import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 
 /**
@@ -51,14 +50,11 @@ public class CommonDatasetRequestDto {
     private Integer type;
 
     /** current_page_attr - 当前页码属性 */
-    @TableField("current_page_attr")
     private String currentPageAttr;
 
     /** page_count_attr - 每页显示条数属性 */
-    @TableField("page_count_attr")
     private String pageCountAttr;
 
     /** total_attr - 数据总条数属性 */
-    @TableField("total_attr")
     private String totalAttr;
 }
