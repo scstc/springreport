@@ -49,15 +49,13 @@ public class CommonDatasetController {
 
     /**
      * 删除数据集
-     * @param requestDto 数据集id
      * @return 删除结果
      * @throws Exception 异常
      */
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @MethodLog(module = "DeleteCommonDataset", remark = "删除数据集", operateType = Constants.OPERATE_TYPE_DELETE)
-    @Check({"id:required#数据集id"})
-    public Response deleteCommonDataset(@RequestBody CommonDatasetRequestDto requestDto) throws Exception {
-        this.commonDatasetService.removeById(requestDto.getId());
+    public Response deleteCommonDataset(@RequestBody List<Long> ids) {
+        this.commonDatasetService.removeBatchByIds(ids);
         return Response.success(Boolean.TRUE);
     }
 
