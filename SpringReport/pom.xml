@@ -405,11 +405,6 @@
 	</profiles>
 
 	<repositories>
-		<!-- 阿里云maven私仓 -->
-		<repository>
-			<id>2029763-release-vQIhVF</id>
-			<url>https://packages.aliyun.com/maven/repository/2029763-release-vQIhVF</url>
-		</repository>
 		<!-- 阿里云maven仓库 -->
 		<repository>
 			<id>central</id>
